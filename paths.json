@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/bh-sites/:/",
-    "/content/bh-sites/configuration:/.helix/config.json"
+    "/content/bh-site/:/",
+    "/content/bh-site/configuration:/.helix/config.json"
   ]
 }
