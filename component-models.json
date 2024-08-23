@@ -195,5 +195,29 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Embed Classses",
+        "options": [
+          {
+            "name": "Embed Style",
+            "children": {
+              "name": "Blog Video",
+              "value": "blog-video-style"
+            }
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "embed",
+        "label": "Embed"
+      }
+    ]
   }
 ]
