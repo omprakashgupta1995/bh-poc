@@ -74,6 +74,35 @@ function buildAutoBlocks() {
 }
 
 /**
+ * Decorates a Image.
+ * @param {Element} main The container element
+ */
+function decorateImageIcons(element, prefix = '') {
+  const anchors = element.querySelectorAll('a');
+
+  anchors.forEach((anchor) => {
+    const { href, textContent } = anchor;
+
+    if (textContent.includes('image')) {
+      const image = new URL(href);
+      anchor.textContent = '';
+      const img = document.createElement('img');
+      img.src = `${window.hlx.codeBasePath}${prefix + textContent}`;
+      img.alt = anchor.title;
+      img.loading = 'lazy';
+      if (href.includes('no-achor')) {
+        anchor.replaceWith(anchor, img)
+        anchor.remove();
+      } else {
+        anchor.appendChild(img);
+      }
+    }
+
+  });
+}
+
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -85,6 +114,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  // decorateImageIcons(main);
 }
 
 /**
