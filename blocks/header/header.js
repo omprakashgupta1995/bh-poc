@@ -2,7 +2,6 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 // import { toggleActiveLogo } from './black-header.js';
 
-
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 const isMobile = window.matchMedia('(max-width: 768px)');
@@ -140,7 +139,6 @@ export default async function decorate(block) {
           //   popOverlay.classList.remove('active');
           //   block.closest('body').classList.remove('bh-eds-body-no-scroll');
           // }
-
         }
       });
     });

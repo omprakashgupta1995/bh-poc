@@ -1,4 +1,5 @@
-@import './primary-header.css';
+@import url('./primary-header.css');
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);

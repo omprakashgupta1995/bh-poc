@@ -74,35 +74,6 @@ function buildAutoBlocks() {
 }
 
 /**
- * Decorates a Image.
- * @param {Element} main The container element
- */
-function decorateImageIcons(element, prefix = '') {
-  const anchors = element.querySelectorAll('a');
-
-  anchors.forEach((anchor) => {
-    const { href, textContent } = anchor;
-
-    if (textContent.includes('image')) {
-      const image = new URL(href);
-      anchor.textContent = '';
-      const img = document.createElement('img');
-      img.src = `${window.hlx.codeBasePath}${prefix + textContent}`;
-      img.alt = anchor.title;
-      img.loading = 'lazy';
-      if (href.includes('no-achor')) {
-        anchor.replaceWith(anchor, img)
-        anchor.remove();
-      } else {
-        anchor.appendChild(img);
-      }
-    }
-
-  });
-}
-
-
-/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -185,10 +156,10 @@ loadPage();
 
 const isMobile = window.matchMedia('(max-width: 768px)');
 if (isMobile.matches) {
-  document.addEventListener('click', function (e) {
+  document.addEventListener('click', (e) => {
     if (e.target.classList.contains('bh-eds-popup-overlay')) {
-      e.target.classList.remove('active')
-      document.querySelector("body").classList.remove('bh-eds-body-no-scroll');
+      e.target.classList.remove('active');
+      document.querySelector('body').classList.remove('bh-eds-body-no-scroll');
     }
-  })
+  });
 }

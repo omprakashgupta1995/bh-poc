@@ -1,5 +1,5 @@
 :root {
-  --bh-primary-white: #FFFFFF;
+  --bh-primary-white: #FFF;
   --bh-primary-black: #000;
   --bh-cream: #ece5d7;
   --bh-breadcrumb-list: #454c53;
@@ -231,12 +231,10 @@ html {
 }
 
 .bh-eds-img-contain {
-  -o-object-fit: contain;
   object-fit: contain;
 }
 
 .bh-eds-img-cover {
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -303,7 +301,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 80%);
   z-index: 998;
   visibility: hidden;
   opacity: 0;
@@ -313,4 +311,4 @@ html {
 .bh-eds-popup-overlay.active {
   visibility: visible;
   opacity: 1;
-}/*# sourceMappingURL=bh-common.css.map */
+}
