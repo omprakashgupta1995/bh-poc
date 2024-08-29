@@ -473,7 +473,6 @@ function decorateIcon(span, prefix = '', alt = '') {
     const classes = (span.classList[1])?.split('-');
     const path = `/${classes.slice(1, 2).join('/')}/${classes.slice(2, -1).join('-')}.${classes.slice(-1)}`;
     console.log(path,"path");
-    
     const img = document.createElement('img');
     img.dataset.iconName = path;
     img.src = `${window.hlx.codeBasePath}${prefix + path}`;

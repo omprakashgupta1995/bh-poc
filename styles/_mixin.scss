@@ -1,0 +1,24 @@
+@mixin generate-css-variables($variables) {
+    :root {
+      @each $name, $value in $variables {
+        --#{$name}: #{$value};
+      }
+    }
+  }
+
+  $colors: (
+  'bh-primary-white': #FFFFFF,
+  'bh-primary-black': #000,
+  'bh-cream': #ece5d7,
+  'bh-breadcrumb-list' : #454c53,
+  'bh-purple' : #7345b2,
+  'bh-para-text': #26282b,
+  'bh-footer-items':#1d1d1f,
+  'footer-main-section': #222,
+  'header-main-menu': #2f2f2f,
+  'offer-header-bg': #ece5d7,
+  
+);
+
+@include generate-css-variables($colors);
+
