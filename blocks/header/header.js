@@ -5,6 +5,7 @@ import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
+const isMobile = window.matchMedia('(max-width: 768px)');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
@@ -126,6 +127,20 @@ export default async function decorate(block) {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           toggleAllNavSections(navSections);
           navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        }
+        if (isMobile.matches) {
+          // debugger;
+          const mobileMenuItem = navSections.querySelectorAll('.default-content-wrapper >ul >li:hover');
+          const popOverlay = block.closest('header').querySelector('.bh-eds-popup-overlay');
+          if (mobileMenuItem) {
+            popOverlay.classList.add('active');
+            block.closest('body').classList.add('bh-eds-body-no-scroll');
+          }
+          // else {
+          //   popOverlay.classList.remove('active');
+          //   block.closest('body').classList.remove('bh-eds-body-no-scroll');
+          // }
+
         }
       });
     });

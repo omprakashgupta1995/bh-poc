@@ -141,3 +141,19 @@
 .bh-eds-h-100{
     height: 100%;
 }
+.bh-eds-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+.bh-eds-popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}

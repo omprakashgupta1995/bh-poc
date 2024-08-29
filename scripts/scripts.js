@@ -182,3 +182,13 @@ async function loadPage() {
 }
 
 loadPage();
+
+const isMobile = window.matchMedia('(max-width: 768px)');
+if (isMobile.matches) {
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('bh-eds-popup-overlay')) {
+      e.target.classList.remove('active')
+      document.querySelector("body").classList.remove('bh-eds-body-no-scroll');
+    }
+  })
+}

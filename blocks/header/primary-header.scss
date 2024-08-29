@@ -300,15 +300,16 @@ header {
                 width: 100%;
                 justify-content: end;
 
-                ul{
+                ul {
                     &:first-child {
                         align-items: center;
-                        @include mobile{
+
+                        @include mobile {
                             display: flex;
                             width: 100%;
                             justify-content: space-between;
                         }
-    
+
                         li {
                             &.nav-drop>ul {
                                 li {
@@ -319,20 +320,20 @@ header {
                                         flex-wrap: wrap;
                                         height: fit-content;
                                         gap: 4px;
-    
+
                                         li {
                                             border-bottom: 0;
                                             padding: 0;
                                             cursor: pointer;
                                             border-radius: 10px;
                                             border: 1px solid transparent;
-    
+
                                             &:hover {
                                                 background: linear-gradient(90.85deg, #f6edff 2.92%, #ffe9ea 61.17%, #fef4e1 98.14%);
                                                 border: 1px solid #CCCCCC66;
                                                 border-radius: 10px;
                                             }
-    
+
                                             a {
                                                 font-size: 16px;
                                                 font-weight: 500;
@@ -345,100 +346,37 @@ header {
                                                 align-items: center;
                                                 text-decoration: none;
                                             }
-    
+
                                             span {
                                                 &.icon-images-design-quiz-header-banner-png {
                                                     width: 250px;
                                                     height: 308px;
+                                                   
+                                                    @include mobile{
+                                                        display: none;
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
-    
+
                                 &::before {
                                     display: none;
                                 }
-    
+
                                 display: none;
                                 position: absolute;
                                 top: 59px;
                                 width: fit-content;
                                 z-index: -1;
                             }
-    
-                            &.nav-drop:nth-child(1) {
-                                &:hover>ul {
-                                    position: absolute;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    display: block;
-                                    background: #fff;
-                                    padding: 32px 30px;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: self-start;
-                                    height: fit-content;
-                                    border-bottom-left-radius: 10px;
-                                    border-bottom-right-radius: 10px;
-                                    cursor: default;
-                                }
-                            }
-    
-                            &.nav-drop:nth-child(2) {
-                                &:hover>ul {
-                                    position: absolute;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    display: block;
-                                    background: #fff;
-                                    padding: 32px 30px;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: self-start;
-                                    height: fit-content;
-                                    border-bottom-left-radius: 10px;
-                                    border-bottom-right-radius: 10px;
-                                    cursor: default;
-                                }
-                            }
-    
-                            &.nav-drop:nth-child(3) {
-                                &:hover>ul {
-                                    position: absolute;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    display: block;
-                                    background: #fff;
-                                    padding: 32px 30px;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: self-start;
-                                    height: fit-content;
-                                    border-bottom-left-radius: 10px;
-                                    border-bottom-right-radius: 10px;
-                                    cursor: default;
-                                }
-                            }
-    
-                            &.nav-drop:nth-child(4) {
-                                &:hover>ul {
-                                    position: absolute;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    display: block;
-                                    background: #fff;
-                                    padding: 32px 30px;
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: self-start;
-                                    height: fit-content;
-                                    border-bottom-left-radius: 10px;
-                                    border-bottom-right-radius: 10px;
-                                    cursor: default;
-                                }
-                            }
-    
+
+
+                            &.nav-drop:nth-child(1),
+                            &.nav-drop:nth-child(2),
+                            &.nav-drop:nth-child(3),
+                            &.nav-drop:nth-child(4),
                             &.nav-drop:nth-child(5) {
                                 &:hover>ul {
                                     position: absolute;
@@ -454,9 +392,35 @@ header {
                                     border-bottom-left-radius: 10px;
                                     border-bottom-right-radius: 10px;
                                     cursor: default;
+
+                                    @include mobile {
+                                        position: fixed;
+                                        width: 100%;
+                                        right: 0;
+                                        top: auto;
+                                        padding: 0 16px;
+                                        bottom:61px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        max-height: 440px;
+                                        overflow-y: scroll;
+                                        border-radius: 20px 20px 0 0;
+
+                                        &:before {
+                                            content: "-";
+                                            width: 56px;
+                                            height: 4px;
+                                            background: #222;
+                                            opacity: .2;
+                                            border-radius: 20px;
+                                            display: block;
+                                            margin: 6px auto 24px auto;
+                                        }
+                                    }
                                 }
                             }
-    
+
+
                             &.nav-drop {
                                 font-size: 16px;
                                 font-weight: 500;
@@ -466,27 +430,39 @@ header {
                                 padding: 21px 0;
                                 border-bottom: 3px solid transparent;
 
-                                @include mobile{
+                                @include mobile {
                                     padding: 0;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    line-height: 14px;
+                                    letter-spacing: 0;
+                                    color: gray;
                                 }
-    
+
                                 &:after {
                                     display: none;
                                 }
-    
+
                                 &:last-child {
                                     padding: 13px 0;
-                                    
-                                    @include mobile{
+
+                                    @include mobile {
                                         padding: 0;
                                     }
                                 }
-    
+
                                 &:hover {
                                     border-bottom: 3px solid;
                                     border-image-slice: 1;
                                     border-image-source: linear-gradient(91.16deg, #431a80 1.46%, #ee4137 51.38%, #feb940 100%);
-    
+
+                                    @include mobile {
+                                        border-bottom: 0;
+                                        border-image-slice: unset;
+                                        border-image-source: none;
+                                        color: #222;
+                                    }
+
                                     ul {
                                         li {
                                             p {
@@ -504,21 +480,21 @@ header {
                                         }
                                     }
                                 }
-    
+
                                 &:last-child {
                                     span {
                                         &.icon-images-more-options-png {
-    
+
                                             width: 32px;
                                             height: 32px;
                                             object-fit: contain;
-    
-    
+
+
                                         }
                                     }
                                 }
                             }
-    
+
                         }
                     }
                 }
