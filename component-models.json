@@ -196,7 +196,10 @@
       }
     ]
   },
-
+  {
+    "id": "accordion",
+    "fields": []
+  },
   {
     "id": "accordion-item",
     "fields": [
