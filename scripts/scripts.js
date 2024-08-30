@@ -163,3 +163,16 @@ if (isMobile.matches) {
     }
   });
 }
+
+// function stickyHeader() {
+//   const navbar = document.querySelectorAll('.header .nav-wrapper');
+//   const sticky = navbar.offsetTop;
+
+//   if (window.pageYOffset > sticky) {
+//     navbar.classList.add('sticky');
+//   } else {
+//     navbar.classList.remove('sticky');
+//   }
+// }
+
+// window.addEventListener('scroll', stickyHeader);
