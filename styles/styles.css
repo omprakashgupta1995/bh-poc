@@ -246,12 +246,3 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
-
-
-/* whole page code */
-
-header,
-footer {
-  display: none;
-}
- 
