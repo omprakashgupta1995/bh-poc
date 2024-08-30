@@ -200,18 +200,11 @@
     "id": "accordion",
     "fields": [
       {
-        "component": "richtext",
-        "name": "head",
+        "component": "text",
+        "name": "style",
         "value": "",
-        "label": "Head",
-        "row" : true
-      },
-      {
-        "component": "richtext",
-        "name": "body",
-        "value": "",
-        "label": "Body",
-        "row" : true
+        "label": "Style",
+        "valueType": "string"
       }
       
     ]
