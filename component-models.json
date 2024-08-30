@@ -204,7 +204,6 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string",
         "row" : true
       }
     ]
