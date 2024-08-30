@@ -201,11 +201,19 @@
     "fields": [
       {
         "component": "richtext",
-        "name": "text",
+        "name": "head",
         "value": "",
-        "label": "Text",
+        "label": "Head",
+        "row" : true
+      },
+      {
+        "component": "richtext",
+        "name": "body",
+        "value": "",
+        "label": "Body",
         "row" : true
       }
+      
     ]
   },
   {
