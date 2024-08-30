@@ -40,5 +40,11 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "text"
+    ]
   }
 ]
