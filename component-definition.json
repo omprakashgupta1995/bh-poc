@@ -152,15 +152,15 @@
           }
         },
         {
-          "title": "Accordian",
-          "id": "accordian",
+          "title": "Accordion",
+          "id": "accordion",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Accordian",
-                  "model": "accordian"
+                  "name": "Accordion",
+                  "model": "accordion"
                 }
               }
             }
