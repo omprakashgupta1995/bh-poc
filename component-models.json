@@ -217,6 +217,26 @@
     ]
   },
   {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "head",
+        "value": "",
+        "label": "Head",
+        "row" : true
+      },
+      {
+        "component": "richtext",
+        "name": "body",
+        "value": "",
+        "label": "Body",
+        "row" : true
+      }
+      
+    ]
+  },
+  {
     "id": "form",
     "fields": [
       {
