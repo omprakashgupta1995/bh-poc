@@ -28,7 +28,11 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "accordion",
+      "form"
+
+
     ]
   },
   {
