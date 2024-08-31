@@ -312,3 +312,19 @@ html {
   visibility: visible;
   opacity: 1;
 }
+
+body::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 5px;
+  margin: 15px 18px;
+}
