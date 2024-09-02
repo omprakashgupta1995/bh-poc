@@ -234,7 +234,10 @@
   },
   {
     "id": "teaser",
-    "fields": [
+    "fields" : []
+  },{
+    "id": "teaser-item",
+      "fields": [
       {
         "component": "reference",
         "valueType": "string",
@@ -279,4 +282,5 @@
       }
     ]
   }
+
 ]
