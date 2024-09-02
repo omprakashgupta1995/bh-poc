@@ -1,9 +1,7 @@
 [
   {
     "id": "main",
-    "components": [
-      "section"
-    ]
+    "components": ["section"]
   },
   {
     "id": "columns",
@@ -11,12 +9,7 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
+    "components": ["text", "image", "button", "title"]
   },
   {
     "id": "section",
@@ -31,28 +24,24 @@
       "fragment",
       "accordion",
       "form",
-      "teaser"
-
+      "teaser",
+      "carousel"
     ]
   },
   {
     "id": "cards",
-    "components": [
-      "card"
-    ]
+    "components": ["card"]
   },
   {
     "id": "accordion",
-    "components": [
-      "text",
-      "accordion-item"
-    ]
+    "components": ["text", "accordion-item"]
   },
   {
     "id": "teaser",
-    "components": [
-      "text",
-      "teaser-item"
-    ]
+    "components": ["text", "teaser-item"]
+  },
+  {
+    "id": "carousel",
+    "components": ["text", "carousel-item"]
   }
 ]
