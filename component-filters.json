@@ -47,5 +47,12 @@
       "text",
       "accordion-item"
     ]
+  },
+  {
+    "id": "teaser",
+    "components": [
+      "text",
+      "image"
+    ]
   }
 ]
