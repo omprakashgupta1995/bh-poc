@@ -208,16 +208,15 @@
         "name": "head",
         "value": "",
         "label": "Head",
-        "row" : true
+        "row": true
       },
       {
         "component": "richtext",
         "name": "body",
         "value": "",
         "label": "Body",
-        "row" : true
+        "row": true
       }
-      
     ]
   },
   {
@@ -229,7 +228,54 @@
         "value": "",
         "label": "Text",
         "valueType": "string",
-        "row" : true
+        "row": true
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
       }
     ]
   }
