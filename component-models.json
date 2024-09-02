@@ -279,23 +279,17 @@
   },
   {
     "id": "carousel",
-    "fields": []
-  },
-  {
-    "id": "carousel-item",
     "fields": [
       {
         "component": "reference",
-        "valueType": "string",
         "name": "image",
-        "label": "Image",
-        "multi": false
+        "label": "Image"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
+        "label": "Image Alt",
         "value": ""
       },
       {
@@ -315,14 +309,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "text",
+        "name": "hrefText",
         "value": "",
         "label": "Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "title",
+        "name": "hrefTitle",
         "value": "",
         "label": "Title"
       }
