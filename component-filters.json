@@ -37,10 +37,6 @@
     "components": ["text", "accordion-item"]
   },
   {
-    "id": "teaser",
-    "components": ["text", "teaser-item"]
-  },
-  {
     "id": "carousel",
     "components": ["text", "carousel-item"]
   }

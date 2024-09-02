@@ -234,10 +234,6 @@
   },
   {
     "id": "teaser",
-    "fields": []
-  },
-  {
-    "id": "teaser-item",
     "fields": [
       {
         "component": "reference",
@@ -270,14 +266,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "text",
+        "name": "hrefText",
         "value": "",
         "label": "Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "title",
+        "name": "hrefTitle",
         "value": "",
         "label": "Title"
       }
