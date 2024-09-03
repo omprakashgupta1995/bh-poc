@@ -309,44 +309,130 @@
     "id": "carousel",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Carousel Style",
+        "options": [
+          {
+            "name": "Content Style",
+            "children": [
+              {
+                "name": "Hero Carousel",
+                "value": "hero-carousel"
+              },
+              {
+                "name": "One Thirds Carousel",
+                "value": "one-thirds-carousel"
+              },
+              {
+                "name": "One Half Carousel",
+                "value": "one-half-carousel"
+              }
+            ]
+          }
+        ],
+        "valueType": "string[]"
+      },
+      {
+        "component": "boolean",
+        "label": "Infinite",
+        "name": "infinite",
+        "value": "",
+        "valueType": "boolean"
+      }
+    ]
+  },
+  {
+    "id": "carousel-item",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Carousel Style",
+        "options": [
+          {
+            "name": "Content Style",
+            "children": [
+              {
+                "name": "Hero Carousel",
+                "value": "hero-carousel"
+              },
+              {
+                "name": "One Thirds Carousel",
+                "value": "one-thirds-carousel"
+              },
+              {
+                "name": "One Half Carousel",
+                "value": "one-half-carousel"
+              }
+            ]
+          }
+        ],
+        "valueType": "string[]"
+      },
+      {
+        "component": "richtext",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "raw": true
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image"
       },
       {
         "component": "text",
-        "valueType": "string",
         "name": "imageAlt",
-        "label": "Image Alt",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Image Alt"
       },
       {
         "component": "text",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "Link"
+        "name": "heading",
+        "label": "Carousel Heading"
+      },
+      {
+        "component": "select",
+        "name": "headingType",
+        "label": "Carousel Heading Type",
+        "options": [
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Embed Classes",
+        "options": [
+          {
+            "name": "Embed Style",
+            "children": [
+              {
+                "name": "Making Money Work",
+                "value": "making-money-work"
+              }
+            ]
+          }
+        ]
       },
       {
         "component": "text",
-        "valueType": "string",
-        "name": "hrefText",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "hrefTitle",
-        "value": "",
-        "label": "Title"
+        "name": "embed",
+        "label": "Embed"
       }
     ]
   }
