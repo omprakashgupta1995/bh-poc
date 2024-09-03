@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/bh-site/:/",
+    "/content/bh-site/forms/form-schema:/forms/form-schema.json",
     "/content/bh-site/configuration:/.helix/config.json"
   ]
 }
