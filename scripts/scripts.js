@@ -164,15 +164,12 @@ if (isMobile.matches) {
   });
 }
 
-// function stickyHeader() {
-//   const navbar = document.querySelectorAll('.header .nav-wrapper');
-//   const sticky = navbar.offsetTop;
-
-//   if (window.pageYOffset > sticky) {
-//     navbar.classList.add('sticky');
-//   } else {
-//     navbar.classList.remove('sticky');
-//   }
-// }
-
-// window.addEventListener('scroll', stickyHeader);
+// eslint-disable-next-line func-names
+window.onscroll = function () {
+  const header = document.querySelector('.header .nav-wrapper');
+  if (window.pageYOffset > 70) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+};

@@ -198,16 +198,7 @@
   },
   {
     "id": "accordion",
-    "fields": [
-      {
-        "component": "text",
-        "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string"
-      }
-      
-    ]
+    "fields": []
   },
   {
     "id": "accordion-item",
@@ -217,16 +208,15 @@
         "name": "head",
         "value": "",
         "label": "Head",
-        "row" : true
+        "row": true
       },
       {
         "component": "richtext",
         "name": "body",
         "value": "",
         "label": "Body",
-        "row" : true
+        "row": true
       }
-      
     ]
   },
   {
@@ -238,7 +228,97 @@
         "value": "",
         "label": "Text",
         "valueType": "string",
-        "row" : true
+        "row": true
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hrefText",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hrefTitle",
+        "value": "",
+        "label": "Title"
+      }
+    ]
+  },
+  {
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hrefText",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hrefTitle",
+        "value": "",
+        "label": "Title"
       }
     ]
   }

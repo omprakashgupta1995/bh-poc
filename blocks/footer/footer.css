@@ -1,3 +1,6 @@
+/* stylelint-disable-next-line import-notation */
+@import url('./new-footer.css');
+
 footer {
   padding: 2rem;
   background-color: var(--light-color);
