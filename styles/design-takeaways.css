@@ -1,0 +1,98 @@
+.section.design-takeaways .default-content-wrapper {
+  margin-top: 64px;
+}
+
+.section.design-takeaways .default-content-wrapper h1 {
+  color: #26282b;
+  font-family: BioRhyme ,sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 44px;
+}
+
+.section.design-takeaways .default-content-wrapper p {
+  margin-top: 32px;
+  padding-bottom: 28px;
+}
+
+.section.design-takeaways .default-content-wrapper p strong {
+  display: inline-block;
+  background: #26282b;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: .01em;
+  margin: 0 8px 12px 0;
+}
+
+.section.design-takeaways .default-content-wrapper ul {
+  display: -webkit-box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  font-size: 18px;
+  line-height: 28px;
+  border-top: 1px solid #e8ebed;
+  color: #26282b;
+}
+
+.section.design-takeaways .default-content-wrapper ul li {
+  list-style: none;
+}
+
+.section.design-takeaways .default-content-wrapper ul li a {
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+
+.section.design-takeaways .default-content-wrapper ul li a:hover {
+  text-decoration: none;
+}
+
+@media (width <= 768px) {
+  .section.design-takeaways .default-content-wrapper {
+    margin-top: 20px;
+  }
+
+  .section.design-takeaways .default-content-wrapper ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    font-size: 16px;
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.section.interior-design-img .default-content-wrapper {
+  margin-top: 55px;
+}
+
+.section.interior-design-img .default-content-wrapper ul > li > span {
+  width: 100%;
+  height: 100%;
+}
+
+.section.interior-design-img .default-content-wrapper ul > li > span img {
+  width: 100%;
+  height: 100%;
+  display: blocka;
+}
+
+.section.interior-design-img .default-content-wrapper ul > li:nth-child(n+2) {
+  position: absolute;
+  z-index: 1;
+}
