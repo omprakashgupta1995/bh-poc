@@ -223,19 +223,6 @@
     "id": "form",
     "fields": [
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "row": true
-      }
-    ]
-  },
-  {
-    "id": "lead-form",
-    "fields": [
-      {
         "component": "multiselect",
         "name": "classes",
         "value": "",
@@ -245,8 +232,8 @@
             "name": "Content Style",
             "children": [
               {
-                "name": "Open Demat Account",
-                "value": "open-demat-account"
+                "name": "form sectiom",
+                "value": "form-section"
               },
               {
                 "name": "Banner Open Demat Account",
