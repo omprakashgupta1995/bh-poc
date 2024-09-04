@@ -4,7 +4,7 @@
 
 .section.design-takeaways .default-content-wrapper h1 {
   color: #26282b;
-  font-family: BioRhyme ,sans-serif;
+  font-family: BioRhyme , sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -68,6 +68,7 @@
   .section.design-takeaways .default-content-wrapper ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+        flex-direction: column;
             flex-direction: column;
     font-size: 16px;
     gap: 20px;
@@ -81,6 +82,10 @@
   margin-top: 55px;
 }
 
+.section.interior-design-img .default-content-wrapper ul {
+  position: relative;
+}
+
 .section.interior-design-img .default-content-wrapper ul > li > span {
   width: 100%;
   height: 100%;
@@ -89,10 +94,49 @@
 .section.interior-design-img .default-content-wrapper ul > li > span img {
   width: 100%;
   height: 100%;
-  display: blocka;
+  display: block;
 }
 
 .section.interior-design-img .default-content-wrapper ul > li:nth-child(n+2) {
   position: absolute;
   z-index: 1;
+  right: 120px;
+  bottom: -30px;
+}
+
+.section.interior-design-img .default-content-wrapper ul > li:nth-child(n+2) a span {
+  width: 64px;
+  height: 64px;
+  display: contents;
+}
+
+.section.interior-design-img .default-content-wrapper ul > li:last-child {
+  right: 30px;
+}
+
+.section.interior-design-img .default-content-wrapper > p {
+  font-family: Lato , sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #26282b;
+  padding-bottom: 30px;
+}
+
+.section.interior-design-img .default-content-wrapper > p:has(strong) {
+  margin: 40px 0 48px;
+  padding: 0;
+}
+
+@media (width <= 768px) {
+  .section.interior-design-img .default-content-wrapper > p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .section.interior-design-img .default-content-wrapper > p:has(strong) {
+    margin: 30px 0;
+    padding: 0;
+  }
 }

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const heroCarousel = {
   // loop: true,
-  slidesPerView: 1,
+  slidesPerView: 4,
   grabCursor: true,
   autoplay: {
     delay: 50000000,
@@ -29,4 +29,9 @@ const heroCarousel = {
       slidesPerView: 1,
     },
   },
+};
+
+export default {
+  'hero-carousel': heroCarousel,
+  default: heroCarousel,
 };
