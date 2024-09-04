@@ -10,6 +10,7 @@ const componentMapping = {
 export default function decorate(block) {
   const rows = Array.from(block.children);
   const config = rows[0];
+  const [prevIcon, nextIcon] = Array.from(config.firstElementChild.children);
   let configData = configObject.default;
   Array.from(block.classList).forEach((cls) => {
     if (configObject[cls]) configData = configObject[cls];
@@ -19,6 +20,8 @@ export default function decorate(block) {
   const swiperButtonPrev = createElement('div', { classes: ['swiper-button-prev'] });
   const swiperButtonNext = createElement('div', { classes: ['swiper-button-next'] });
   const swiperPagination = createElement('div', { classes: ['swiper-pagination'] });
+  swiperButtonPrev.append(prevIcon);
+  swiperButtonNext.append(nextIcon);
   config.remove();
   props.forEach((eachProps) => {
     const [classes, eyebrow, image, title] = Array.from(eachProps.children);
