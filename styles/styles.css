@@ -24,7 +24,7 @@
   /* fonts */
 
   /* --body-font-family: roboto, roboto-fallback; */
-  --body-font-family: lato, biorhyme , sans-serif;
+  --body-font-family: lato, biorhyme, sans-serif;
   --heading-font-family: var(--body-font-family);
 
   /* --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace; */
@@ -248,3 +248,14 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}

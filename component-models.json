@@ -337,9 +337,23 @@
       {
         "component": "boolean",
         "label": "Infinite",
-        "name": "infinite",
+        "name": "carousel_infinite",
         "value": "",
         "valueType": "boolean"
+      },
+      {
+        "component": "reference",
+        "label": "Prev Icon",
+        "name": "carousel_prev",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Next Icon",
+        "name": "carousel_next",
+        "value": "",
+        "valueType": "string"
       }
     ]
   },

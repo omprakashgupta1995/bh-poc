@@ -1,3 +1,5 @@
+@import url('./form-wrapper.css');
+
 .form .field-wrapper {
     display: grid;
     grid-auto-flow: row;
