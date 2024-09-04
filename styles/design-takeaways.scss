@@ -4,7 +4,7 @@
 
         h1 {
             color: #26282b;
-            font-family: BioRhyme;
+            font-family: BioRhyme, sans-serif;
             font-size: 36px;
             font-style: normal;
             font-weight: 700;
@@ -74,15 +74,16 @@
 }
 
 // section interior-design-img start
+
 .section.interior-design-img {
 
     .default-content-wrapper {
         margin-top: 55px;
 
         ul {
+            position: relative;
 
             >li {
-
                 >span {
                     width: 100%;
                     height: 100%;
@@ -90,21 +91,75 @@
                     img {
                         width: 100%;
                         height: 100%;
-                        display: blocka;
+                        display: block;
                     }
                 }
 
                 &:nth-child(n+2) {
                     position: absolute;
                     z-index: 1;
+                    right: 120px;
+                    bottom: -30px;
+
+                    a {
+
+                        span {
+                            width: 64px;
+                            height: 64px;
+                            display: contents;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    right: 30px;
+                }
+
+            }
+        }
+
+        >p {
+            font-family: Lato, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #26282b;
+            padding-bottom: 30px;
+
+            &:has(strong) {
+                margin: 40px 0 48px 0;
+                padding: 0;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .section.interior-design-img {
+        padding: 0 16px;
+
+
+        .default-content-wrapper {
+
+            >p {
+                font-size: 16px;
+                padding-bottom: 20px;
+
+                &:has(strong) {
+                    margin: 30px 0 30px 0;
+                    padding: 0;
                 }
 
             }
 
-
         }
-    }
 
+    }
 }
 
 // section interior-design-img Ends

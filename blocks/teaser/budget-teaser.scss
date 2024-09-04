@@ -1,0 +1,136 @@
+// teaser-wrapper Start
+.section.budget-calculator {
+    max-width: 1063px;
+    margin: 75px auto;
+
+    .teaser-wrapper {
+
+        .teaser {
+            display: flex;
+            background-color: #f5f4f0;
+            border-radius: 10px;
+
+            >div {
+
+                &:has(>div >picture) {
+                    flex: none;
+                    position: relative;
+                    width: 55%;
+                }
+
+                &:nth-child(2) {
+                    >div {
+                        padding: 50px 56px 38px;
+
+                        h2 {
+                            color: #7345b2;
+                            font-family: BioRhyme, sans-serif;
+                            font-size: 36px;
+                            font-weight: 700;
+                            line-height: 117%;
+                            margin-bottom: 24px;
+                        }
+
+                        p {
+                            color: #202020;
+                            font-family: Lato, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 130%;
+                            margin-bottom: 42px;
+                            max-width: 300px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            a {
+                                display: block;
+                                color: #7345b2;
+                                font-family: Lato, sans-serif;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 130%;
+                                border-radius: 30px;
+                                border: 1px solid #7345b2;
+                                padding: 12px 39px;
+                                width: max-content;
+                                cursor: pointer;
+                                background: unset;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                >div {
+                    height: 100%;
+
+                    >picture {
+                        >img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section.budget-calculator {
+        margin: 50px 0;
+        padding: 0 20px;
+
+        .teaser-wrapper {
+
+            .teaser {
+                flex-direction: column;
+
+                >div {
+
+                    &:has(>div >picture) {
+                        display: block;
+                        position: relative;
+                        height: 310px;
+                        width: 100%;
+                    }
+
+                    &:nth-child(2) {
+                        >div {
+                            text-align: center;
+                            padding: 31px 53px 27px;
+
+                            h2 {
+                                font-size: 22px;
+                                margin-bottom: 19px;
+                                line-height: 31px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                line-height: 21px;
+                                margin-bottom: 30px;
+                                max-width: 100%;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                a {
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// teaser-wrapper Start

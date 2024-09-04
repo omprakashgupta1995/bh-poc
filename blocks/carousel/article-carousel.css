@@ -1,0 +1,178 @@
+.section.article-carousel {
+  width: 100%;
+  max-width: 100%;
+  background-color: #f9f9f6;
+  margin-top: 80px;
+  padding: 46px 0;
+  position: relative;
+}
+
+.section.article-carousel .default-content-wrapper {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.section.article-carousel .default-content-wrapper h2 {
+  color: #000;
+  font-family: BioRhyme , sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .02em;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+
+.section.article-carousel .carousel-wrapper {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide {
+  margin: 0 10px;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h4 strong a {
+  position: absolute;
+  padding: 10px 14px 0 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  font-weight: 600;
+  color: unset;
+  z-index: 1;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h4 strong a span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #f1efe8;
+  position: relative;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h4 strong a span img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+          transform: translate(-50%, -50%);
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul {
+  position: relative;
+  height: 230px;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li:last-child {
+  position: absolute;
+  z-index: 1;
+  background-color: #26282b;
+  bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: .01em;
+  line-height: 17px;
+  padding: 8px 9pt;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li span {
+  height: 230px;
+  width: 100%;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h2 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #26282b;
+  font-weight: 700;
+  margin-bottom: 8px;
+  overflow: hidden;
+  padding: 24px 24px 0;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div > p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #454c53;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-bottom: 9pt;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 24px;
+}
+
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h3 {
+  font-size: 16px;
+  color: #26282b;
+  font-weight: 700;
+  margin-bottom: 8px;
+  overflow: hidden;
+  padding: 0 24px 12px;
+}
+
+@media (width <= 961px) {
+  .section.article-carousel {
+    padding: 46px 0;
+  }
+
+  .section.article-carousel .default-content-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .section.article-carousel .default-content-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide {
+    margin: 0 10px 0 0;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul {
+    height: 257px;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li span {
+    height: 257px;
+    width: 100%;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h2 {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #26282b;
+    display: -webkit-box;
+    font-size: 18px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div p {
+    line-clamp: 2;
+    font-size: 1pc;
+    line-height: 24px;
+    margin-bottom: 9pt;
+    -webkit-line-clamp: 2;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-next::after,
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-prev::after {
+    display: none;
+  }
+
+  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-pagination {
+    display: none;
+  }
+}

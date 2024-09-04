@@ -1,0 +1,219 @@
+.section.form-wrapper {
+    background-color: #323232;
+    max-width: 100%;
+    padding: 100px 0 56px;
+    display: flex;
+    align-items: start;
+
+    .default-content-wrapper {
+        max-width: 1063px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .form-wrapper {
+        max-width: 1063px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .form {
+            >form {
+                display: grid;
+                grid-template-columns: auto;
+
+                >div {
+                    &:first-child {
+                        grid-column: 1/2;
+                        grid-row: 1 / 6;
+                        max-width: 416px;
+                        padding-right: 60px;
+                        align-items: start;
+                    }
+
+                    &:nth-child(n+2) {
+                        grid-column: 2/3;
+                    }
+                }
+
+                .fieldset-wrapper {
+                    padding-right: 80px;
+
+                    fieldset {
+
+                        >div {
+                            h2 {
+                                color: #FFF;
+                                font-family: BioRhyme ,sans-serif;
+                                font-size: 36px;
+                                font-weight: 700;
+                                line-height: 42.192px;
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .field-wrapper {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    label {
+                        color: #FFF;
+                        font-family: Lato ,sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20.8px;
+                        margin-top: 4px;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-family: Lato, sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.8px;
+                        opacity: .6;
+                        margin-top: 32px;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        padding: 12px 39px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 23px;
+                        height: 47px;
+                        align-items: center;
+                        background-color: #7345b2;
+                        border-color: #7345b2;
+                        color: #fff;
+                        margin: 0;
+                    }
+
+                    fieldset {
+                        display: flex;
+                        width: 100%;
+                        max-width: 100%;
+                        gap: 20px;
+                        
+                        label {
+                            position: absolute;
+                            display: none;
+                            color: #FFF;
+                            font-family: Poppins ,sans-serif;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 14px;
+                            top: -10px;
+                            left: 16px;
+                            z-index: 9;
+                            background-color: #323232;
+                            padding: 0 4px;
+
+                        }
+                       .field-wrapper{
+                        &:focus-within label {
+                            display: block;
+                        }
+                       }
+                        input {
+                            border: .8px solid #ffffff40;
+                            border-radius: 6px;
+                            color: #FFF;
+                            font-family: Lato , sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            padding: 17px 16px;
+                            width: 100%;
+                            background-color: transparent;
+                            outline: none;
+                            margin-bottom: 25px;
+
+                            // &:focus+label {
+                            //     display: block;
+                            // }
+
+                            &:focus {
+                                border: 1px solid #fff;
+                                color: #fff;
+
+                                // &:has(lable) label{
+                                //     display: block;
+                                // }
+                                // + label {
+                                //     display: block;
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section.form-wrapper {
+        max-width: 100%;
+        padding: 40px 20px 36px;
+        margin-top: 50px;
+
+        .form-wrapper {
+            max-width: 1063px;
+            width: 100%;
+
+            .form {
+                >form {
+                    display: flex;
+                    flex-direction: column;
+                    grid-template-columns: auto;
+
+                    .field-wrapper {
+
+                        input[type=checkbox] {
+                            accent-color: red;
+                        }
+
+                        &:first-child {
+                            width: 100%;
+                            max-width: 100%;
+                            padding: 0;
+                        }
+
+                        fieldset {
+                            flex-direction: column;
+                            display: block;
+
+                            input {
+                                width: 100%;
+                                max-width: 100%;
+                                margin-bottom: 20px;
+                            }
+
+                            >div {
+                                h2 {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    line-height: 26.4px;
+                                    text-align: left;
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
+
+                        button {
+                            width: 100%;
+                            max-width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
