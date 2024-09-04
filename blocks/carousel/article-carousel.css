@@ -16,7 +16,7 @@
 
 .section.article-carousel .default-content-wrapper h2 {
   color: #000;
-  font-family: BioRhyme , sans-serif;
+  font-family: BioRhyme, sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: .02em;
@@ -62,7 +62,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul {
@@ -84,7 +84,7 @@
   padding: 8px 9pt;
 }
 
-.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li span {
+.section.article-carousel .carousel-wrapper .carousel >.swiper-wrapper .swiper-slide div ul li span {
   height: 230px;
   width: 100%;
 }
@@ -99,7 +99,7 @@
   padding: 24px 24px 0;
 }
 
-.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div > p {
+.section.article-carousel .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div>p {
   font-size: 18px;
   line-height: 28px;
   color: #454c53;
@@ -122,7 +122,7 @@
   padding: 0 24px 12px;
 }
 
-@media (width <= 961px) {
+@media (width <=961px) {
   .section.article-carousel {
     padding: 46px 0;
   }
@@ -135,20 +135,20 @@
     font-size: 24px;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide {
     margin: 0 10px 0 0;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul {
     height: 257px;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li span {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div ul li span {
     height: 257px;
     width: 100%;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h2 {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div h2 {
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -159,7 +159,7 @@
     text-overflow: ellipsis;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div p {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div p {
     line-clamp: 2;
     font-size: 1pc;
     line-height: 24px;
@@ -167,12 +167,12 @@
     -webkit-line-clamp: 2;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-next::after,
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-prev::after {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-next::after,
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-button-prev::after {
     display: none;
   }
 
-  .section.article-carousel > .carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-pagination {
+  .section.article-carousel>.carousel-wrapper .carousel .swiper-wrapper .swiper-slide div .swiper-pagination {
     display: none;
   }
 }

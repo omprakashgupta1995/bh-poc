@@ -263,14 +263,14 @@
   {
     "id": "teaser",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "fileReference",
-        "label": "Background Image",
-        "description": "The teaser  Background image",
-        "multi": false
-      },
+      // {
+      //   "component": "reference",
+      //   "valueType": "string",
+      //   "name": "fileReference",
+      //   "label": "Background Image",
+      //   "description": "The teaser  Background image",
+      //   "multi": false
+      // },
       {
         "component": "reference",
         "name": "image",
