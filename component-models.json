@@ -266,7 +266,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "name": "fileReference1",
         "label": "Background Image",
         "description": "The teaser  Background image",
         "multi": false
