@@ -266,10 +266,32 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference1",
+        "name": "fileReference",
         "label": "Background Image",
-        "description": "The teaser  Background image",
+        "description": "Background image desktop",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fileReferenceAlt",
+        "label": "Background Desktop Image Alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference2",
+        "label": "Mobile Background Image",
+        "description": "Background image mobile",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fileReference2Alt",
+        "label": "Background Mobile Image Alt",
+        "value": ""
       },
       {
         "component": "reference",
