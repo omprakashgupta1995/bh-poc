@@ -281,7 +281,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference2",
+        "name": "fileReference",
         "label": "Mobile Background Image",
         "description": "Background image mobile",
         "multi": false
@@ -289,7 +289,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "fileReference2Alt",
+        "name": "fileReferenceAlt",
         "label": "Background Mobile Image Alt",
         "value": ""
       },
