@@ -33,6 +33,7 @@ main .section {
       @include mobile {
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -80,6 +81,10 @@ main .section {
               line-height: 16px;
               margin: 5px 0;
               text-align: center;
+
+              @include mobile{
+                margin-bottom: 30px;
+              }
             }
           }
         }
@@ -152,6 +157,10 @@ main .section {
     display: flex;
     flex-direction: column;
     gap:56px;
+
+    @include mobile{
+      gap: 48px;
+    }
     p {
       &:first-child {
         color: #26282b;
@@ -160,6 +169,12 @@ main .section {
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
+
+        @include mobile{
+          font-size: 16px;
+          line-height: 24px;
+        }
+
       }
       &:nth-child(2) {
         color: #26282b;
@@ -168,6 +183,17 @@ main .section {
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
+
+        @include mobile{
+
+          em{
+            font-size: 16px;
+            line-height: 24px;
+            color: #26282b;
+            font-family: Lato, sans-serif;
+            font-weight: 400;
+          }
+        }
       }
     }
   }
