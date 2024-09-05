@@ -176,6 +176,8 @@
 
 .section.breadcrumb .default-content-wrapper > ul > li {
   white-space: nowrap;
+
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -202,6 +204,11 @@
   margin-top: 32px;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.section.breadcrumb .default-content-wrapper > ul > li a:hover {
+  text-decoration: none;
 }
 
 @media (width <= 992px) {
