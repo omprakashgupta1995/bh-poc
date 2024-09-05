@@ -146,6 +146,7 @@
   display: block;
   height: 64px;
   width: 64px;
+     object-fit: cover;
 }
 
 .section.article-carousel .carousel-wrapper .carousel .swiper-button-next {

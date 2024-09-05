@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,QAFA,AAAA,wBAAwB,CAC5B,cAAc,CACV,MAAM,CAAA;EACF,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,KAAK;CAIpB;;AART,AAKY,QALJ,AAAA,wBAAwB,CAC5B,cAAc,CACV,MAAM,CAGF,MAAM,CAAA;EACF,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "video-component.scss"
+    ],
+    "names": [],
+    "file": "video-component.css"
+}

@@ -12,9 +12,9 @@
   border-radius: 10px;
 }
 
-.section.budget-calculator .teaser-wrapper .teaser > div:has(> div > picture) {
+.section.budget-calculator .teaser-wrapper .teaser > div:has(> div > p > picture) {
   -webkit-box-flex: 0;
-          flex: none;
+      flex: none;
   position: relative;
   width: 55%;
 }
@@ -62,15 +62,22 @@
   margin: 0;
 }
 
-.section.budget-calculator .teaser-wrapper .teaser > div > div {
+.section.budget-calculator .teaser-wrapper .teaser > div > div:has(> p > picture) {
   height: 100%;
+  display: -webkit-box;
+  display: flexbox;
+  display: flex;
 }
 
-.section.budget-calculator .teaser-wrapper .teaser > div > div > picture > img {
+.section.budget-calculator .teaser-wrapper .teaser > div > div p:last-child:has(> picture) {
+  display: none;
+}
+
+.section.budget-calculator .teaser-wrapper .teaser > div > div p > picture > img {
   display: block;
   width: 100%;
   height: 100%;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 
@@ -83,10 +90,10 @@
   .section.budget-calculator .teaser-wrapper .teaser {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+        flex-direction: column;
   }
 
-  .section.budget-calculator .teaser-wrapper .teaser > div:has(> div > picture) {
+  .section.budget-calculator .teaser-wrapper .teaser > div:has(> div > p > picture) {
     display: block;
     position: relative;
     height: 310px;
@@ -117,5 +124,20 @@
 
   .section.budget-calculator .teaser-wrapper .teaser > div:nth-child(2) > div p a {
     margin: 0 auto;
+  }
+
+  .section.budget-calculator .teaser-wrapper .teaser > div > div p:last-child:has(> picture) {
+    display: block;
+    width: 100%;
+  }
+
+  .section.budget-calculator .teaser-wrapper .teaser > div > div p:first-child:has(> picture) {
+    display: none;
+  }
+
+  .section.budget-calculator .teaser-wrapper .teaser > div > div p > picture > img {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    object-fit: unset;
   }
 }

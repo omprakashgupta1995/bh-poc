@@ -1,0 +1,8 @@
+.section.video-component-wrapper .embed-wrapper .embed {
+  max-width: 100%;
+  min-height: 390px;
+}
+
+.section.video-component-wrapper .embed-wrapper .embed iframe {
+  min-height: 390px;
+}

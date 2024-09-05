@@ -1,4 +1,7 @@
+@import '../styles/_responsive.scss';
+
 .section.design-takeaways {
+    padding-bottom: 0;
     .default-content-wrapper {
         margin-top: 64px;
 
@@ -128,7 +131,7 @@
             padding-bottom: 30px;
 
             &:has(strong) {
-                margin: 40px 0 48px 0;
+                margin: 40px 0;
                 padding: 0;
             }
 
@@ -151,7 +154,7 @@
                 padding-bottom: 20px;
 
                 &:has(strong) {
-                    margin: 30px 0 30px 0;
+                    margin: 30px 0;
                     padding: 0;
                 }
 
@@ -163,3 +166,66 @@
 }
 
 // section interior-design-img Ends
+
+
+
+/* Breadcrumb css Start */
+
+.section.breadcrumb {
+    
+    max-width: 1440px;
+    padding-bottom: 0;
+    .default-content-wrapper {
+      max-width: 1440px;
+      margin-top: 20px;
+        padding: 95px 0 0 0;
+  
+      >ul {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.56;
+        gap: 36px;
+  
+        >li {
+          white-space: nowrap;
+          /* overflow: hidden; */
+          position: relative;
+  
+          &::after {
+            position: absolute;
+            content: "";
+            border: solid black;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            top: 40%;
+            z-index: 1;
+            right: -19px;
+            line-height: 1px;
+          }
+  
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+  
+          a {
+            color: #454c53;
+            margin-top: 32px;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  
+  @include tab{
+    .section.breadcrumb {
+      display: none;
+    }
+  }
+  /* Breadcrumb css End */
