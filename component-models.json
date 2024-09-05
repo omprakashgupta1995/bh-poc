@@ -273,6 +273,14 @@
       },
       {
         "component": "reference",
+        "valueType": "string",
+        "name": "fileReference1",
+        "label": "Background Image Mobile",
+        "description": "The teaser  Background image mobile",
+        "multi": false
+      },
+      {
+        "component": "reference",
         "name": "image",
         "label": "Image"
       },
