@@ -266,7 +266,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "name": "fileReference1",
         "label": "Background Image",
         "description": "The teaser  Background image",
         "multi": false
@@ -274,7 +274,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference1",
+        "name": "fileReference2",
         "label": "Background Image Mobile",
         "description": "The teaser  Background image mobile",
         "multi": false
