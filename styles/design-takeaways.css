@@ -143,3 +143,13 @@
     padding: 0;
   }
 }
+
+main .section {
+  padding: 0;
+}
+
+@media (width >=600px) {
+  main .section {
+    padding: 0;
+  }
+}

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .section.budget-calculator {
   max-width: 1063px;
   margin: 75px auto;
@@ -61,7 +62,6 @@
   margin: 0;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .section.budget-calculator .teaser-wrapper .teaser > div > div {
   height: 100%;
 }

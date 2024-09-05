@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 footer.footer-wrapper {
   background-color: #f1efe8;
   padding: 0 40px 35px;
@@ -49,8 +50,12 @@ footer.footer-wrapper .footer .section.columns-container.accordion-container .co
 }
 
 footer.footer-wrapper .footer .section.columns-container.accordion-container .columns-wrapper .columns-3-cols > div > div:nth-child(3) ul {
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
@@ -63,23 +68,34 @@ footer.footer-wrapper .footer .section.columns-container.accordion-container .co
 footer.footer-wrapper .footer .section.columns-container.accordion-container .default-content-wrapper {
   max-width: 100%;
   margin: 0;
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 24px;
   border-top: 1px solid #9c9c9c;
 }
 
 @media (width <= 767px) {
   footer.footer-wrapper .footer .section.columns-container.accordion-container .default-content-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-bottom: 40px;
   }
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer.footer-wrapper .footer .section.columns-container.accordion-container .default-content-wrapper ul {
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
   gap: 30px;
 }
@@ -106,7 +122,7 @@ footer.footer-wrapper .footer .section.columns-container.accordion-container .de
   font-weight: 600;
   line-height: 29px;
   border-bottom: 1px solid #000;
-  padding-bottom: 0.5px;
+  padding-bottom: .5px;
 }
 
 @media (width <= 767px) {
@@ -123,13 +139,17 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper {
 }
 
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion {
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
   width: 100%;
 }
 
 @media (width <= 767px) {
   footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 }
 
@@ -154,14 +174,20 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
     background-color: transparent;
     padding: 0;
     border-top: none;
-    border-bottom: 1px solid rgb(32 32 32 / 20%);
+    border-bottom: 1px solid #20202033;
+    display: -webkit-box;
+    display: flexbox;
     display: flex;
   }
 
   footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion details[open] .accordion-item-body ul {
-    column-count: 1;
+            column-count: 1;
+    display: -webkit-box;
+    display: flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
     width: 100%;
   }
 
@@ -190,7 +216,7 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
 
 @media (width <= 767px) and (width <= 767px) and (width <= 767px) {
   footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion details[open] summary h3::after {
-    transform: rotate(134deg);
+            transform: rotate(134deg);
   }
 }
 
@@ -220,19 +246,25 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
     width: 0;
     height: 0;
     border: unset;
-    transform: unset;
+            transform: unset;
     display: none;
   }
 }
 
 @media (width <= 767px) and (width <= 767px) {
   footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion summary.accordion-item-label h3 {
-    border-bottom: 1px solid rgb(32 32 32 / 20%);
+    border-bottom: 1px solid #20202033;
     padding-bottom: 16px;
     margin-top: 20px;
+    display: -webkit-box;
+    display: flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     line-height: 20.8px;
     color: #1d1d1f;
     font-size: 16px;
@@ -249,12 +281,17 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
 }
 
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion > div:nth-of-type(4) div {
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion > div div {
+  display: -webkit-box;
+  display: flexbox;
   display: flex;
 }
 
@@ -265,7 +302,6 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
   color: #222;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion > div div ul {
   margin-top: 22px;
   width: 100%;
@@ -277,12 +313,10 @@ footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion
   }
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion > div div ul li {
   padding-bottom: 19px;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer.footer-wrapper .footer .accordion-container .accordion-wrapper .accordion > div div ul li a {
   font-size: 16px;
   font-weight: 400;
