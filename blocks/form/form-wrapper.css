@@ -51,7 +51,7 @@
 
 .section.form-wrapper .form-wrapper .form > form .fieldset-wrapper fieldset > div h2 {
   color: #FFF;
-  font-family: BioRhyme ,sans-serif;
+  font-family: BioRhyme, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 42.192px;
@@ -71,9 +71,18 @@
   position: relative;
 }
 
+.section.form-wrapper .form-wrapper .form > form .field-wrapper:has(button) {
+  display: -webkit-box;
+  display: flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .section.form-wrapper .form-wrapper .form > form .field-wrapper label {
   color: #FFF;
-  font-family: Lato ,sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.8px;
@@ -119,7 +128,7 @@
   position: absolute;
   display: none;
   color: #FFF;
-  font-family: Poppins ,sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
@@ -138,7 +147,7 @@
   border: .8px solid #ffffff40;
   border-radius: 6px;
   color: #FFF;
-  font-family: Lato , sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -175,6 +184,10 @@
             flex-direction: column;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+  }
+
+  .section.form-wrapper .form-wrapper .form > form .field-wrapper:has(button) {
+    display: block;
   }
 
   .section.form-wrapper .form-wrapper .form > form .field-wrapper input[type="checkbox"] {

@@ -1,3 +1,7 @@
+.section.design-takeaways {
+  padding-bottom: 0;
+}
+
 .section.design-takeaways .default-content-wrapper {
   margin-top: 64px;
 }
@@ -31,7 +35,6 @@
 
 .section.design-takeaways .default-content-wrapper ul {
   display: -webkit-box;
-  display: flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -124,7 +127,7 @@
 }
 
 .section.interior-design-img .default-content-wrapper>p:has(strong) {
-  margin: 40px 0 48px;
+  margin: 40px 0;
   padding: 0;
 }
 
@@ -140,16 +143,6 @@
 
   .section.interior-design-img .default-content-wrapper>p:has(strong) {
     margin: 30px 0;
-    padding: 0;
-  }
-}
-
-main .section {
-  padding: 0;
-}
-
-@media (width >=600px) {
-  main .section {
     padding: 0;
   }
 }
