@@ -140,34 +140,35 @@
                         }
                     }
 
-                   >div{
-                    p {
-                        &:last-child {
-                           &:has(>picture) {
-                               display: block;
-                               width: 100%;
-                           }
-                       }
-                       &:first-child {
-                           &:has(>picture) {
-                               display: none;
-                           }
-                       }
-                       
-                       >picture {
-                        >img {
-                            border-radius: 10px 10px 0 0;
-                            background-size: cover;
-                            object-fit: unset;
+                    >div {
+                        p {
+                            &:last-child {
+                                &:has(>picture) {
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+
+                            &:first-child {
+                                &:has(>picture) {
+                                    display: none;
+                                }
+                            }
+
+                            >picture {
+                                >img {
+                                    border-radius: 10px 10px 0 0;
+                                    background-size: cover;
+                                    object-fit: unset;
+                                }
+                            }
                         }
+
                     }
-                   }
-                       
                 }
             }
         }
     }
-}
 }
 
 // teaser-wrapper Start
