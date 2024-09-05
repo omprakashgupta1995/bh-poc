@@ -266,21 +266,29 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference1",
-        "label": "Background Image",
-        "description": "The teaser  Background image",
-        "multi": false
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image"
+        "name": "teaser_desk-image",
+        "label": "Desktop Image",
+        "description": "The Desktop image"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt",
+        "name": "teaser_desk-imageAlt",
+        "label": "The Desktop image alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "teaser_mob-image",
+        "label": "Mobile Image",
+        "description": "The Mobile image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "teaser_mob-imageAlt",
+        "label": "The Mobile image alt",
         "value": ""
       },
       {
