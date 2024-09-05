@@ -30,8 +30,8 @@ const heroCarousel = {
     },
     1025: {
       slidesPerView: 4,
-      slidesPerGroup: 4,
-      spaceBetween: 20,
+      slidesPerGroup: 1,
+    //   spaceBetween: 20,
     },
   },
 };

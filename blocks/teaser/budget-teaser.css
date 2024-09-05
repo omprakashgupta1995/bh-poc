@@ -61,6 +61,7 @@
   margin: 0;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .section.budget-calculator .teaser-wrapper .teaser > div > div {
   height: 100%;
 }
