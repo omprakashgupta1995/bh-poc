@@ -176,8 +176,6 @@
 
 .section.breadcrumb .default-content-wrapper > ul > li {
   white-space: nowrap;
-
-  /* overflow: hidden; */
   position: relative;
 }
 
