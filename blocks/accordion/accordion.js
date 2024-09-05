@@ -7,7 +7,7 @@
 export default function decorate(block) {
   [...block.children].forEach((row) => {
     // decorate accordion item label
-    const isMobile = window.matchMedia('(max-width: 768px)');
+    const isMobile = window.matchMedia('(max-width: 767px)');
 
     if (isMobile.matches) {
       const label = row.children[0];

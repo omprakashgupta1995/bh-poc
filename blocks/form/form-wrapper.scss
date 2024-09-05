@@ -59,7 +59,12 @@
                         display: flex;
                         justify-content: end;
                     }
-
+                    input[type=checkbox] {
+                        accent-color: white;
+                        width: 20px;
+                        display: block;
+                        height: 20px;
+                    }
                     width: 100%;
                     margin: 0;
                     padding: 0;
@@ -186,9 +191,7 @@
                             display: block;
                         }
 
-                        input[type=checkbox] {
-                            accent-color: red;
-                        }
+                       
 
                         &:first-child {
                             width: 100%;
