@@ -1,0 +1,8 @@
+.section.take-steps-banner{
+    max-width: 1440px;
+}
+
+.section.take-steps-banner >div{
+    max-width: 100%;
+    margin: auto;
+}

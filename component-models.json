@@ -465,5 +465,41 @@
         "label": "Embed"
       }
     ]
+  },
+  {
+    "id": "teaserAPI",
+    "fields": [ 
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Teaser API Classes",
+        "options": [
+          {
+            "name": "Teaser API Style",
+            "children": [
+              {
+                "name": "Teaser API Wrapper",
+                "value": "teaser-api-wrapper"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "url",
+        "label": "url"
+      },
+      {
+        "component": "text",
+        "name": "button text",
+        "label": "button text"
+      },
+      {
+        "component": "text",
+        "name": "button url",
+        "label": "button url"
+      }
+    ]
   }
 ]

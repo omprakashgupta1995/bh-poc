@@ -27,7 +27,8 @@
       "lead-form",
       "teaser",
       "carousel",
-      "embed"
+      "embed",
+      "teaserAPI"
     ]
   },
   {
@@ -41,5 +42,9 @@
   {
     "id": "carousel",
     "components": ["carousel-item", "embed", "image"]
+  },
+  {
+    "id" : "teaserAPI",
+    "components" : ["teaser"]
   }
 ]
