@@ -28,8 +28,7 @@
       "teaser",
       "carousel",
       "embed",
-      "teaserAPI",
-      "accordion-group"
+      "teaserAPI"
     ]
   },
   {
@@ -47,9 +46,5 @@
   {
     "id" : "teaserAPI",
     "components" : ["teaser"]
-  },
-  {
-    "id": "accordion-group",
-    "components": ["accordion-group-item"]
-  }
+  } 
 ]
