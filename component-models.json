@@ -197,6 +197,10 @@
     ]
   },
   {
+    "id": "accordion-group",
+    "fields": []
+  },
+  {
     "id": "accordion",
     "fields": []
   },
@@ -497,8 +501,8 @@
       },
       {
         "component": "text",
-        "name": "button url",
-        "label": "button url"
+        "name": "load count",
+        "label": "number of card to be shown on click"
       }
     ]
   }
