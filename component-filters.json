@@ -49,7 +49,7 @@
     "components" : ["teaser"]
   },
   {
-    "id": "accordion-group-item",
+    "id": "accordion-group",
     "components": ["accordion-group-item"]
   }
 ]
