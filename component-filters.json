@@ -28,7 +28,8 @@
       "teaser",
       "carousel",
       "embed",
-      "teaserAPI"
+      "teaserAPI",
+      "accordion-group"
     ]
   },
   {
