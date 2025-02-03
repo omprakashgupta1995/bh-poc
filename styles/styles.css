@@ -11,6 +11,7 @@
  */
 
 @import url('./design-takeaways.css');
+@import url("./paragraph-text.css");
 
 :root {
   /* colors */

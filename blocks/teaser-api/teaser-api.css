@@ -1,9 +1,4 @@
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images {
-    display: flex;
-    column-gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
+
 
 .section.teaser-api-container{
     max-width: 1440px;
@@ -15,7 +10,7 @@
 .section.teaser-api-container >div{
     max-width: 100%;
 }
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images{
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images{
     display: flex;
     column-gap: 20px;
     flex-wrap: wrap;
@@ -23,7 +18,7 @@
     justify-content: space-around;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images >a{
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images >a{
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +27,12 @@
     cursor: pointer;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images a:hover{
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images a:hover{
     text-decoration: none;
     cursor: pointer;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter {
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter {
     width: 31.2%;
     position: relative;
     margin-bottom: 30px;
@@ -45,14 +40,14 @@
     flex-direction: column;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-room-img {
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img {
     display: block;
     height: 269px;
     margin-bottom: 15px;
     width: 100%;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gl-filter-image-content {
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
@@ -63,7 +58,7 @@
     margin-bottom: 12px;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-filter__book-consultation {
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation {
     margin-top: auto;
     border: 1px solid #7345b2;
     padding: 12px 24px;
@@ -72,7 +67,7 @@
     cursor: pointer;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-filter__book-consultation span {
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation span {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -102,18 +97,18 @@
 
 
 @media screen and (min-width: 576px) and (max-width: 991px){
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter{
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter{
         width: 48%;
         background-color: #f4f2ed;
         margin-bottom: unset;
     }
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-room-img {
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img {
         height: 269px;
         margin-bottom: 0;
     }
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gl-filter-image-content{
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content{
         font-family: 'Lato';
         font-style: normal;
         font-weight: 500;
@@ -134,16 +129,16 @@
         margin-top: 90px;
     } */
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter {
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter {
         border-radius: 12px;
         margin-bottom: 20px;
     }
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-filter__book-consultation {
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation {
         margin: 16px 20px 24px;
     }
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gl-filter-image-content {
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content {
         padding-left: 20px;
         font-size: 16px;
         line-height: 22px;
@@ -153,13 +148,13 @@
 @media (max-width: 575px) {
 
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter  {
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter  {
         width: 100%;
         background-color: #f4f2ed;
         margin-bottom: 20px;
     }
 
-    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallary-images .gallery-filter .gallery-room-img{
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img{
         height: 257px;
         margin-bottom: 0;
         border-radius: 12px 12px 0 0;

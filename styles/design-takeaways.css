@@ -207,3 +207,39 @@
 }
 
 /* Breadcrumb css End */
+
+/* false Ceiling css Start */
+
+.section.design-takeaways.false-ceiling,
+.section.design-takeaways.false-ceiling >div{
+  max-width: 1440px;
+}
+
+.section.design-takeaways.false-ceiling .default-content-wrapper{
+  margin-bottom: 50px;
+}
+
+.section.design-takeaways.false-ceiling .default-content-wrapper h1{
+  margin-top: 67px;
+  margin-bottom: 67px;
+  font-family: BioRhyme;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 58.8px;
+  color: #000;
+}
+
+.section.design-takeaways.false-ceiling .default-content-wrapper p{
+  padding: unset;
+}
+
+@media screen and (max-width: 992px){
+  .section.design-takeaways.false-ceiling .default-content-wrapper h1{
+    margin-top: 27px;
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 28.6px;
+  }
+}
+
+/* false Ceiling css End */
