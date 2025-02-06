@@ -12,12 +12,13 @@ export default async function decorate(block) {
 
 async function generateTeaserDom(block, props) {
   block.innerHTML = "";
-  const [apiURl, btnT, btnCount] = props;
-  let url = apiURl.textContent.trim();
-  let btnText = btnT.textContent.trim();
-  let loadMoreCount = btnCount.textContent.trim();
+  const [apiURl, btnT, btnCount,modalLinkDiv] = props;
+  let url = apiURl?.textContent.trim();
+  let btnText = btnT?.textContent.trim();
+  let loadMoreCount = btnCount?.textContent.trim();
+  let modalLink = modalLinkDiv?.textContent.trim();
   count = Number(loadMoreCount);
-  let teaserHtmlDom = await imageDOM(block, url, loadMoreCount)
+  let teaserHtmlDom = await imageDOM(block, url, loadMoreCount,modalLink)
   let gallaryImagesHTML = document.createElement("div");
   gallaryImagesHTML.classList.add("gallery-images")
   let buttonDiv = document.createElement("div");
@@ -26,14 +27,17 @@ async function generateTeaserDom(block, props) {
   buttonDiv.innerHTML = ` <a role="button" id="gallery_btn">${btnText}<span class="icon-plus-o"></span></a>`
   block.append(gallaryImagesHTML)
   block.append(buttonDiv)
-  window.onload = function(){
-    block.querySelector(".gallery-filter__book-consultation").href = "/bh-eds/modals/sitevisitpopup";
-  }
+  // window.onload = function(){
+  //   block.querySelectorAll(".gallery-filter__book-consultation").forEach((e)=>{
+  //     console.log("linked")
+  //     e.target.href = "/bh-eds/modals/sitevisitpopup"
+  // })
+  // }
   let loadMoreBTN = block.querySelector(".gallery__btn a")
-  loadMoreBTN.addEventListener("click", () => loadmoreCards(block, apiURl, loadMoreCount))
+  loadMoreBTN.addEventListener("click", () => loadmoreCards(block, apiURl, loadMoreCount,modalLink))
 }
 
-async function imageDOM(block, url, loadMoreCount=-1) {
+async function imageDOM(block, url, loadMoreCount=-1,modalLink) {
   const response = await CFApiCall(url);
   let htmlContent = '';
   response.grouped.title.groups.slice(0, loadMoreCount).forEach((val) => {
@@ -48,15 +52,15 @@ async function imageDOM(block, url, loadMoreCount=-1) {
      <a href="${url}" ></a>
      <img src="${imgURL}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img">
      <h2 class="gl-filter-image-content">${title}</h2>
-     <a href="/modal/sitevisitpopup" class="gallery-filter__book-consultation"><span>${btn}</span></a>
+     <a href = "${modalLink?modalLink:"/bh-eds/modals/sitevisitpopup"}" class="gallery-filter__book-consultation"><span>${btn}</span></a>
 </div>`
   })
   return htmlContent;
 }
 
-async function loadmoreCards(block, apiUrl, authCount) {
+async function loadmoreCards(block, apiUrl, authCount,modalLink) {
   let url = `https://www.beautifulhomes.asianpaints.com/solr/BH-Revamp-gallery/select?q=identifier:gallery%20%20AND%20room:%22Study%20Room%22&start=${start}&rows=${count}&group=true&group.field=title&sort=publishedDate%20desc`;
-  let imageDomH = await imageDOM(block,url)
+  let imageDomH = await imageDOM(block,url,authCount,modalLink)
   console.log(imageDomH);
   
   let div= block.querySelector(".gallery-images")
