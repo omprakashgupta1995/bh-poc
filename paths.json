@@ -2,6 +2,7 @@
   "mappings": [
     "/content/bh-site/:/",
     "/content/bh-site/forms/form-schema:/forms/form-schema.json",
+    "/content/bh-site/forms/form-schema:/forms/popup-form-schema.json",
     "/content/bh-site/bh-eds/forms/popup-form-schema:/bh-eds/forms/popup-form-schema.json",
     "/content/bh-site/configuration:/.helix/config.json"
   ]
