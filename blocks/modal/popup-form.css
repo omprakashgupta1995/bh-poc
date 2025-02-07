@@ -1,0 +1,290 @@
+.modal dialog[open]:has(.section.popup-form)::backdrop {
+    background: rgba(38, 40, 43, .5);
+}
+
+.modal dialog[open]:has(.section.popup-form)::-webkit-scrollbar {
+    width: 4px;
+    /* height: 2em */
+}
+.modal dialog[open]:has(.section.popup-form)::-webkit-scrollbar-track {
+    background: #f5f3f3; /* Optional: set background color of the track */
+  }
+
+  .modal dialog[open]:has(.section.popup-form)::-webkit-scrollbar-thumb {
+    background-color: rgb(166, 166, 166); /* This sets the thumb color to red */
+    border-radius: 10px; /* Optional: to give rounded corners */
+  }
+
+.modal dialog[open]:has(.section.popup-form) {
+    max-width: 894px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: unset;
+    padding: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 634px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    height: 100%;
+    border: unset;
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: rgb(179, 175, 175) #f1f1f1; */
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content {
+    padding: unset;
+    max-height: 100%;
+    overflow-y: unset;
+    margin: unset;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form {
+    margin: unset;
+    background: #f7f2e7;
+    overflow: hidden;
+    display: flex;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper {
+    margin: unset;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser {
+    margin: unset;
+    position: relative;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:first-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    max-height: 634px;
+}
+
+/* .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:first-child>div {
+    height: 634px;
+} */
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:first-child>div>picture>img {
+    display: block;
+    width: 100%;
+    height: 634px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2) {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div h2 {
+    font-family: BioRhyme;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div h3 {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #d0d0d0;
+    width: 190px;
+}
+
+/* Form Section Css */
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper {
+    min-height: 634px;
+    padding: 70px 40px 40px;
+    max-width: 519px;
+    width: 100%;
+    background: #f7f2e7;
+    border-radius: 0 10px 10px 0;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form>div:nth-child(2)>fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form>div>fieldset>div {
+    position: relative;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form>div>fieldset {
+    grid-template-columns: unset;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper {
+    margin-top: unset;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper fieldset label {
+    position: absolute;
+    display: none;
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    top: -10px;
+    left: 16px;
+    z-index: 9;
+    background-color: #f7f2e7;
+    padding: 0 4px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper fieldset input {
+    border-radius: 8px;
+    background: #f7f2e7;
+    padding: 18px 16px;
+    color: #202020;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper fieldset .field-wrapper:focus-within label {
+    display: block;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper fieldset input:focus {
+    border: .8px solid #202020;
+    outline: unset;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper label {
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #323232;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper input[type="checkbox"] {
+    accent-color: #7345b3;
+    width: 20px;
+    height: 20px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper p {
+    color: #323232;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    opacity: .6;
+    margin-bottom: 2px;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper:has(button) {
+    display: flex;
+    justify-content: end;
+}
+
+.modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper button {
+    padding: 12px 39px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    height: 47px;
+    align-items: center;
+    background-color: #7345b2;
+    border-color: #7345b2;
+    color: #fff;
+    margin: 0;
+}
+
+.modal:has(.section.popup-form) .close-button{
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 992.9px) {
+
+
+    .modal dialog[open]:has(.section.popup-form) {
+        max-width: 335px;
+        max-height: 654px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div p {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.6px;
+        margin-bottom: 4px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div h2 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        width: 173px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:nth-child(2)>div h3 {
+        font-size: 10px;
+        line-height: 12px;
+        width: 141px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form {
+        flex-direction: column;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .teaser-wrapper .teaser>div:first-child>div>picture>img {
+        height: 200px;
+    }
+
+    /* form css */
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper {
+        padding: 24px 16px 20px 20px;
+        border-radius: 0 0 10px 10px;
+        min-height: unset;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper label {
+        font-size: 12px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper p {
+        font-size: 10px;
+        line-height: 13.2px;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form .field-wrapper button{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .modal dialog[open]:has(.section.popup-form) .modal-content .section.popup-form .form-wrapper .form>form>div:nth-child(2)>fieldset{
+        flex-direction: row;
+    }
+}
