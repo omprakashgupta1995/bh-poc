@@ -50,7 +50,7 @@ async function imageDOM(block, url, loadMoreCount=-1,modalLink) {
     htmlContent += `
     <div onclick="" class="gallery-filter">
      <a href="${url}" ></a>
-     <img src="${imgURL+"?width=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" >
+     <img src="https://static.asianpaints.com${imgURL+"?width=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" >
      <h2 class="gl-filter-image-content">${title}</h2>
      <a href = "${modalLink?modalLink:"/modals/sitevisitpopup"}" class="gallery-filter__book-consultation"><span>${btn}</span></a>
 </div>`
