@@ -49,7 +49,9 @@ async function imageDOM(block, url, loadMoreCount=undefined, modalLink) {
     btn = "Book Free Site Visit";
     htmlContent += `
     <div onclick="" class="gallery-filter">
-     <a href="${url}" ></a>
+      <div class="redirection_link">     
+        <a href="${url}" ></a>
+      </div>
      <img src="https://static.asianpaints.com${imgURL+"?width=500&height=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" width="500" 
      height="500" >
      <h2 class="gl-filter-image-content">${title}</h2>

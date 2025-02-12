@@ -18,7 +18,7 @@
     justify-content: space-around;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images >a{
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .redirection_link a{
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images a:hover{
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images  a:hover{
     text-decoration: none;
     cursor: pointer;
 }
