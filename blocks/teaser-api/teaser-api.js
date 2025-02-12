@@ -37,7 +37,7 @@ async function generateTeaserDom(block, props) {
   loadMoreBTN.addEventListener("click", () => loadmoreCards(block, apiURl, loadMoreCount,modalLink))
 }
 
-async function imageDOM(block, url, loadMoreCount=-1,modalLink) {
+async function imageDOM(block, url, loadMoreCount=undefined, modalLink) {
   const response = await CFApiCall(url);
   let htmlContent = '';
   response.grouped.title.groups.slice(0, loadMoreCount).forEach((val) => {
@@ -50,7 +50,8 @@ async function imageDOM(block, url, loadMoreCount=-1,modalLink) {
     htmlContent += `
     <div onclick="" class="gallery-filter">
      <a href="${url}" ></a>
-     <img src="https://static.asianpaints.com${imgURL+"?width=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" >
+     <img src="https://static.asianpaints.com${imgURL+"?width=500&height=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" width="500" 
+     height="500" >
      <h2 class="gl-filter-image-content">${title}</h2>
      <a href = "${modalLink?modalLink:"/modals/sitevisitpopup"}" class="gallery-filter__book-consultation"><span>${btn}</span></a>
 </div>`
@@ -59,8 +60,8 @@ async function imageDOM(block, url, loadMoreCount=-1,modalLink) {
 }
 
 async function loadmoreCards(block, apiUrl, authCount,modalLink) {
-  let url = `https://www.beautifulhomes.asianpaints.com/solr/BH-Revamp-gallery/select?q=identifier:gallery%20%20AND%20room:%22Study%20Room%22&start=${start}&rows=${count}&group=true&group.field=title&sort=publishedDate%20desc`;
-  let imageDomH = await imageDOM(block,url,authCount,modalLink)
+  let url = `https://www.beautifulhomes.asianpaints.com/solr/BH-Revamp-gallery/select?q=identifier:gallery%20%20AND%20room:%22Study%20Room%22&start=${start}&rows=${Number(authCount)}&group=true&group.field=title&sort=publishedDate%20desc`;
+  let imageDomH = await imageDOM(block, url, undefined, modalLink)
   console.log(imageDomH);
   
   let div= block.querySelector(".gallery-images")
@@ -70,6 +71,10 @@ async function loadmoreCards(block, apiUrl, authCount,modalLink) {
   block.append(btn)
   start=count;
   count = count + Number(authCount);
+  if(start >= 68){
+    btn.querySelector("a").style.pointerEvents = "none";
+    btn.querySelector("a").style.opacity = "0.5";
+  }
 }
 
 export async function CFApiCall(cfurl) {
