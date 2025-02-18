@@ -15,9 +15,9 @@ async function generateTeaserDom(block, props) {
   const [apiURl, btnT, btnCount,modalLinkDiv] = props;
   let url = apiURl?.textContent.trim();
   let btnText = btnT?.textContent.trim();
-  let loadMoreCount = btnCount?.textContent.trim();
+  let loadMoreCount = Number(btnCount?.textContent.trim());
   let modalLink = modalLinkDiv?.textContent.trim();
-  count = Number(loadMoreCount);
+  // count = Number(loadMoreCount);
   let teaserHtmlDom = await imageDOM(block, url, loadMoreCount,modalLink)
   let gallaryImagesHTML = document.createElement("div");
   gallaryImagesHTML.classList.add("gallery-images")
@@ -35,17 +35,27 @@ async function generateTeaserDom(block, props) {
   // }
   let loadMoreBTN = block.querySelector(".gallery__btn a")
   loadMoreBTN.addEventListener("click", () => loadmoreCards(block, apiURl, loadMoreCount,modalLink))
+  
+  // let popupBTN = block.querySelectorAll(".gallery-filter >a")
+  // popupBTN.forEach((eachBTN)=>{
+  //   eachBTN.addEventListener("click",(e)=> {
+  //     e.prevenDefault();
+  //     }
+  // )
+  // })
 }
 
 async function imageDOM(block, url, loadMoreCount=undefined, modalLink) {
   const response = await CFApiCall(url);
   let htmlContent = '';
   response.grouped.title.groups.slice(0, loadMoreCount).forEach((val) => {
-    const imgURL = val.doclist?.docs[0]?.featuredImg[0]?.split("$$$")[0]
-    const imgTitle = val.doclist?.docs[0]?.featuredImg[0]?.split("$$$")[1]
-    const title = val.doclist?.docs[0]?.title
-    const url = val.doclist?.docs[0]?.url
-    let btn = val.doclist?.docs[0]?.btn
+    // const imgURL = val.doclist?.docs[0]?.featuredImg[0]?.split("$$$")[0]
+    // const imgTitle = val.doclist?.docs[0]?.featuredImg[0]?.split("$$$")[1]
+    // const title = val.doclist?.docs[0]?.title
+    // const url = val.doclist?.docs[0]?.url
+    // let btn = val.doclist?.docs[0]?.btn
+    let {featuredImg,title,url,btn} = val.doclist?.docs[0];
+    let [imgURL, imgTitle] = featuredImg[0]?.split("$$$");
     btn = "Book Free Site Visit";
     htmlContent += `
     <div onclick="" class="gallery-filter">
@@ -62,7 +72,7 @@ async function imageDOM(block, url, loadMoreCount=undefined, modalLink) {
 }
 
 async function loadmoreCards(block, apiUrl, authCount,modalLink) {
-  let url = `https://www.beautifulhomes.asianpaints.com/solr/BH-Revamp-gallery/select?q=identifier:gallery%20%20AND%20room:%22Study%20Room%22&start=${start}&rows=${Number(authCount)}&group=true&group.field=title&sort=publishedDate%20desc`;
+  let url = `https://www.beautifulhomes.asianpaints.com/solr/BH-Revamp-gallery/select?q=identifier:gallery%20%20AND%20room:%22Study%20Room%22&start=${start}&rows=${authCount}&group=true&group.field=title&sort=publishedDate%20desc`;
   let imageDomH = await imageDOM(block, url, undefined, modalLink)
   console.log(imageDomH);
   
@@ -72,7 +82,8 @@ async function loadmoreCards(block, apiUrl, authCount,modalLink) {
   block.append(div)
   block.append(btn)
   start=count;
-  count = count + Number(authCount);
+  // count = count + Number(authCount);
+  count = count + authCount;
   if(start >= 68){
     btn.querySelector("a").style.pointerEvents = "none";
     btn.querySelector("a").style.opacity = "0.5";
