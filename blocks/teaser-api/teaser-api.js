@@ -62,7 +62,7 @@ async function imageDOM(block, url, loadMoreCount=undefined, modalLink) {
       <div class="redirection_link">     
         <a href="${url}" ></a>
       </div>
-     <img src="https://static.asianpaints.com${imgURL+"?width=500&height=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" width="500" 
+     <img src="https://static.asianpaints.com${imgURL+".transform/bh-gallery-listing/image.jpeg"+"?width=500&height=500&format=webply&optimize=medium"}" alt="${imgTitle}" title="${imgTitle}" loading="lazy" class="gallery-room-img" width="500" 
      height="500" >
      <h2 class="gl-filter-image-content">${title}</h2>
      <a href = "${modalLink?modalLink:"/modals/sitevisitpopup"}" class="gallery-filter__book-consultation"><span>${btn}</span></a>
@@ -81,9 +81,10 @@ async function loadmoreCards(block, apiUrl, authCount,modalLink) {
   div.innerHTML += imageDomH;
   block.append(div)
   block.append(btn)
-  start=count;
+  
   // count = count + Number(authCount);
   count = count + authCount;
+  start=count;
   if(start >= 68){
     btn.querySelector("a").style.pointerEvents = "none";
     btn.querySelector("a").style.opacity = "0.5";
