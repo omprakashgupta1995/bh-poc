@@ -5,6 +5,6 @@
     "/content/bh-site/forms/popup-form-schema:/forms/popup-form-schema.json",
     "/content/bh-site/bh-eds/forms/popup-form-schema:/bh-eds/forms/popup-form-schema.json",
     "/content/bh-site/configuration:/.helix/config.json",
-    "/content/bh-site/api/cust-testimonial:/api/cust-testimonial.json"
+    "/content/bh-site/api/cust-testimonial:api/cust-testimonial.json"
   ]
 }
