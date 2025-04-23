@@ -33,6 +33,93 @@ export function moveAttributes(from, to, attributes) {
   });
 }
 
+export function fetchAPI(method, url, data) {
+  return new Promise(async (resolve, reject) => {
+    try {
+      if (method === 'GET') {
+        const resp = await fetch(url);
+        resolve(resp);
+      } else if (method === 'POST') {
+        data.headerJson = data.headerJson || {
+          'Content-Type': 'application/json',
+        };
+
+        if (data.headerJson['Content-Type'] == 'remove') {
+          data.headerJson['Content-Type'] = '';
+        } else {
+          data.headerJson['Content-Type'] = data.headerJson['Content-Type'] ? data.headerJson['Content-Type'] : 'application/json';
+        }
+
+        /* Optimzie Code */
+        /* data.headerJson = data.headerJson || {};
+        data.headerJson["Content-Type"] = data.headerJson["Content-Type"] === 'remove' ? '' : data.headerJson["Content-Type"] || "application/json"; */
+
+        const request = new Request(url, {
+          method: 'POST',
+          body: JSON.stringify(data.requestJson),
+          headers: data.headerJson,
+        });
+        const response = await fetch(request);
+        const json = await response.json();
+        resolve({ responseJson: json });
+      }
+    } catch (error) {
+      console.warn(error);
+      reject(error);
+    }
+  });
+}
+
+export function getProps(block, config) {
+  return Array.from(block.children).map((el, index) => {
+    if (config?.picture) {
+      return el.innerHTML.includes('picture') ? el.querySelector('picture') : el.innerText.trim();
+    } if (config?.index && config?.index.includes(index)) {
+      return el;
+    }
+    return el.innerHTML.includes('picture') ? el.querySelector('img').src.trim() : el.innerText.trim();
+  });
+}
+
+export function renderHelper(data, template, callBack) {
+  const dom = document.createElement('div');
+  dom.innerHTML = template;
+  const loopEl = dom.getElementsByClassName('forName');
+  Array.prototype.slice.call(loopEl).forEach((eachLoop) => {
+    let templates = '';
+    const localtemplate = eachLoop.innerHTML;
+    for (const key in data) {
+      if (Object.hasOwnProperty.call(data, key)) {
+        const element = data[key];
+        // data.forEach(function (element, index) {
+        var dataItem = callBack ? callBack(element, key) : element;
+        const keys = Object.keys(dataItem);
+        var copyTemplate = localtemplate;
+        copyTemplate.split('{').forEach((ecahKey) => {
+          const key = ecahKey.split('}')[0];
+          const keys = key.split('.');
+          let value = dataItem;
+          keys.forEach((key) => {
+            if (value && value.hasOwnProperty(key)) {
+              // if (key === 'data-src') {
+              //   key = 'src';
+              // }
+              value = value[key];
+            } else {
+              value = '';
+            }
+          });
+          copyTemplate = copyTemplate.replace(`{${key}}`, value);
+        });
+        templates += copyTemplate;
+        // });
+      }
+    }
+    eachLoop.outerHTML = templates;
+  });
+  return dom.innerHTML;
+}
+
 /**
  * Move instrumentation attributes from a given element to another given element.
  * @param {Element} from the element to copy attributes from
