@@ -575,5 +575,30 @@
         ]
       }
     ]
+  },
+  {
+    "id": "team-list",
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "value": "",
+        "label": "Team List Style",
+        "options": [
+          {
+            "name": "Team List Wrapper",
+            "value": "team-list-wrapper"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
