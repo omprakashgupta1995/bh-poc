@@ -1,52 +1,59 @@
+.section.team-list-container {
+    margin-top: 65px;
+}
+
 .team-list-wrapper > div{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
     column-gap: 30px;
 }
 
-.team-list-wrapper .teamlist-card {
+.team-list-wrapper > div:first-child {
+    display: none;
+}
+
+.section.team-list-container .teamlist-card {
     padding: 50px 30px;
     background-color: #f9f9f6;
 }
 
-.team-list-wrapper .teamlist-card .teamlist-heading {
+.section.team-list-container .teamlist-card .teamlist-heading {
     padding-bottom: 20px;
     border-bottom: 1px solid #eedfdf;
 }
 
-.team-list-wrapper .teamlist-card .teamlist-heading h3 {
+.section.team-list-container .teamlist-card .teamlist-heading h3 {
     font-size: 24px;
     line-height: 28px;
     padding-bottom: 20px;
     color: #000;
 }
 
-.team-list-wrapper .teamlist-card .teamlist-heading p {
+.section.team-list-container .teamlist-card .teamlist-heading p {
     font-size: 16px;
     line-height: 20px;
     color: #000;
 }
 
-.team-list-wrapper .teamlist-content {
+.section.team-list-container .teamlist-content {
     padding-top: 20px;
 } 
 
-.team-list-wrapper .teamlist-content .members-heading {
-    padding-bottom: 10px;
+.section.team-list-container .teamlist-content .members-heading {
+    padding-bottom: 15px;
     font-size: 16px;
     line-height: 20px;
     color: #000;
     font-weight: 600;
 }
 
-.team-list-wrapper .teamlist-content ul {
-    list-style: disc;
+.section.team-list-container .teamlist-content ul {
+    padding-left: 20px;
 }
 
-.team-list-wrapper .teamlist-content ul li {
+.section.team-list-container .teamlist-content ul li {
     font-size: 16px;
     line-height: 20px;
     color: #000;
     padding-bottom: 5px;
+    list-style: disc;
 }

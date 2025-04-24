@@ -4,7 +4,7 @@ async function fetchData() {
     try {
         const response = await fetch(('https://publish-p48457-e1275402.adobeaemcloud.com/graphql/execute.json/company-framewok/person-by-name'), {
             method: "GET",
-            credentials: "include",
+            // credentials: "include",
         });
 
         const data = await response.json();
