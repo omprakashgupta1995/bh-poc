@@ -2,9 +2,9 @@ import { div, p, h3, ul, li } from '../../scripts/dom-helpers.js';
 
 async function fetchData() {
     try {
-        const response = await fetch(('https://author-p48457-e1275402.adobeaemcloud.com/graphql/execute.json/company-framewok/person-by-name'), {
+        const response = await fetch(('https://publish-p48457-e1275402.adobeaemcloud.com/graphql/execute.json/company-framewok/person-by-name'), {
             method: "GET",
-            credentials: "include",
+            // credentials: "include",
         });
 
         const data = await response.json();
