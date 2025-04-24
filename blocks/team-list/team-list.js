@@ -4,7 +4,7 @@ async function fetchData() {
     try {
         const response = await fetch(('https://publish-p48457-e1275402.adobeaemcloud.com/graphql/execute.json/company-framewok/person-by-name'), {
             method: "GET",
-            // credentials: "include",
+            credentials: "include",
         });
 
         const data = await response.json();
@@ -20,7 +20,7 @@ export default async function decorate(block) {
     const teamList = entries.data.teamList.items;
     //   console.log(entries)
 
-    block.firstElementChild.append(
+    block.firstElementChild.firstElementChild.append(
         ...teamList.map((item) => {
             const memberList = ul({ class: 'member-list' });
 
