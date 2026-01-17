@@ -1,0 +1,166 @@
+
+
+.section.teaser-api-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section.teaser-api-container >div{
+    max-width: 100%;
+}
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .redirection_link a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images  a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter {
+    width: 31.2%;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img {
+    display: block;
+    height: 269px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #26282b;
+    text-transform: lowercase;
+    margin-bottom: 12px;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation {
+    margin-top: auto;
+    border: 1px solid #7345b2;
+    padding: 12px 24px;
+    border-radius: 50px;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #7345b2;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery__btn {
+    text-align: center;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery__btn  a {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: #7345b2;
+    border-color: #7345b2;
+    color: #fff;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery__btn  a:hover {
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 991px){
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter{
+        width: 48%;
+        background-color: #f4f2ed;
+        margin-bottom: unset;
+    }
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img {
+        height: 269px;
+        margin-bottom: 0;
+    }
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+        padding: 20px 24px;
+        margin: 0;
+        height: auto;
+        color: #26282b;
+        text-transform: lowercase;
+    }
+}   
+
+@media (max-width: 991px) {
+/* 
+    .section.teaser-api-container{
+        margin-top: 90px;
+    } */
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter {
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-filter__book-consultation {
+        margin: 16px 20px 24px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gl-filter-image-content {
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}   
+
+@media (max-width: 575px) {
+
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter  {
+        width: 100%;
+        background-color: #f4f2ed;
+        margin-bottom: 20px;
+    }
+
+    .section.teaser-api-container .teaser-api-wrapper .teaser-api-wrapper .gallery-images .gallery-filter .gallery-room-img{
+        height: 257px;
+        margin-bottom: 0;
+        border-radius: 12px 12px 0 0;
+    }
+}
